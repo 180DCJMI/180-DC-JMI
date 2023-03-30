@@ -1,22 +1,71 @@
+import "../components/App.css";
 import React, { useState } from "react";
-import Article  from "./article"; 
+import Data from "../components/articleData";
+import Slider from "react-slick";
+
 function Blog(){
-    const bgUrl=["../images/rect-6.png","../images/rect-5.png","../images/rect-4.png","../images/rect-3.png"];
-    return(
-        <div className="container" id="c-3">
-    <h1 style={{textAlign:"center"}}>
-        THE <span>180 DC</span> Blog</h1>
-        <div id="carousel" style={{
-            display : "flex",
-            flexDirection : "row",
-        }}>
-<Article/>
-<Article/>
-<Article/>
-<Article/>
-        
-        </div>
-        </div>
-    )
+    const [dataIndex,setDataIndex]= useState(0)
+const setting={
+    className: "slider variable-width",
+    infinite:true,
+    dots:false,
+    lazyload:true,
+    speed:400,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    centerMode:true,
+    centerPadding:0,
+    beforeChange:(current,next)=>setDataIndex(next),
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            initialSlide: 2,
+            dots:false,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            dots:false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+
 }
+
+
+    return (
+        <div id="carousel">
+        <h1 style={{textAlign:"center",
+        margin:"0px",padding:"15px 0px"}}>The <span>180 DC</span> Blog</h1>
+                <Slider {...setting}>
+        {Data.map((elem,index)=>{
+            return(
+            <div className={index===dataIndex ? "slide activeSlide" : "slide"} style={{ width: "180px" }}>
+            <h2>{elem.headline}</h2>
+            <p id="author">Author : {elem.author}</p>
+            <p>{elem.content}</p>
+            </div>
+            )
+        })}
+            </Slider>
+    
+        </div>
+    ) 
+}
+
 export default Blog;

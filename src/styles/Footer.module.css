@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0 2rem;
+    color: #fff;
+    width: 205px;
+}
+
+.flex ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex ul li {
+    margin: 0.5rem 0;
+}

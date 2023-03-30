@@ -1,44 +1,45 @@
 import React from "react";
 import Logo from "./logo";
+import classes from "./../styles/Footer.module.css";
 
 function Footer(){
     return(
         <div class="container" id="c-2">
        <Logo size="340px"/>
         <div id="footer">
-        <div class="box"><h3>CONTACT US</h3>
+        <div className={classes.flex}><h3>CONTACT US</h3>
         <ul>
-          <li><a href="">jamiami@180dc.org</a></li>
-          <li><a href="">Jamia Millia Islami , Jamia Nagar Okhla , New Delhi , India ,110025</a></li>
-          <li><a href="">+91 XXXXXXXX</a></li>
+          <li>jamiami@180dc.org</li>
+          <li>Jamia Millia Islami , Jamia Nagar Okhla , New Delhi , India ,110025</li>
+          <li>+91 XXXXXXXX</li>
         </ul>
         </div>
-        <div class="box"><h3>ABOUT US</h3>
+        <div className={classes.flex}><h3>ABOUT US</h3>
         <ul>
-          <li><a href="">Mission and vision</a></li>
-          <li><a href="">Testimonials</a></li>
-          <li><a href="">The Team</a></li>
-          <li><a href="">Clients</a></li>
+          <li>Mission and vision</li>
+          <li>Testimonials</li>
+          <li>The Team</li>
+          <li>Clients</li>
         </ul>
         </div>
-        <div class="box"><h3>DELIVERABLES</h3>
+        <div className={classes.flex}><h3>DELIVERABLES</h3>
         <ul>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Articles</a></li>
-          <li><a href="">Reports</a></li>
+          <li>Blog</li>
+          <li>Articles</li>
+          <li>Reports</li>
         </ul>
         </div>
-        <div class="box" ><h3>SHOP</h3>
+        <div className={classes.flex} ><h3>SHOP</h3>
         <ul>
-          <li><a href="">180 DC Merchandise</a></li>
+          <li>180 DC Merchandise</li>
         </ul>
         </div>
-        <div class="box" id="social"><h3>SOCIALS</h3>
+        <div className={classes.flex} id="social"><h3>SOCIALS</h3>
         <ul>
-          <li><a href=""> </a></li>
-          <li><a href=""> </a></li>
-          <li><a href=""> </a></li>
-          <li><a href=""> </a></li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
         </ul>
         </div>
       </div>

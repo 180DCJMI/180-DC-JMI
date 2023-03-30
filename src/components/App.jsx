@@ -11,7 +11,6 @@ function App(){
        <Blog/>
        <Body/>
        <Footer/>
-       
         </div>
     )
 

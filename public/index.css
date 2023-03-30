@@ -1,108 +1,84 @@
-*,body{
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background-color: #e0fab5;
 }
 
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-p{
+p {
   font-size: 7px;
 }
 
 .container{
-padding: 20px 35px 8px 35px;
+  padding: 1rem 2rem;
 }
 
-#box1{
+#navbar ul {
   display: flex;
-  justify-content: space-between;
-}
-
-#hr-logo{
-  width: 255px;
-  position: relative;
-  bottom: 102px;
-}
-
-#navbar ul{
-  display: flex;
-  margin: 7px 55px 0px 0px;
+  justify-content: end;
+  margin: 10px 0px 0px 0px;
+  width: 548px;
   padding: 11px;
-
 }
 
-#navbar ul li{
-  margin: 0px 21px;
+#navbar ul li {
+  margin: 0px 11px;
 }
 
-#navbar ul li a{
- 
+#navbar ul li a {
   color: #d4d4d4;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
 }
 
-
-#box2{
+#box2 {
   margin: 118px 0px 0px 0px;
   padding: 18px;
   width: 69%;
 }
 
-
-#box2 h1{
-  font-family: 'Montserrat', sans-serif;
+#box2 h1 {
+  font-family: "Montserrat", sans-serif;
   font-size: 45px;
   font-weight: 900;
   color: white;
 }
- span{
-  color: #83C630;
+span {
+  color: #83c630;
 }
-#footer{
-
+#footer {
   display: flex;
   width: 100%;
-  position: relative;
-  bottom: 177px;
-  height: 168px;
-
-
-
+  margin-top: -160px;
 }
-.box{
+.box {
   width: 205px;
   height: 205px;
   padding: 10px 20px;
   color: #ffffff;
-  
 }
-.box ul{
+.box ul {
   margin-top: 20px;
+  padding: 0px;
 }
-.box ul li{
+.box ul li {
   margin-top: 7px;
   font-size: 13px;
 }
-.box a{
+.box a {
   color: #e2e1e1;
 }
-#social{
+#social {
   display: flex;
 }
-#c-2{
-  height: 355px;
+#c-2 {
   background: #414042;
 }
-#c-3{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #E0FAB5;
-}
-

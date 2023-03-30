@@ -1,0 +1,17 @@
+.nav{
+    color: #fff;
+    display: flex;
+    height: fit-content;
+    gap: 1.5rem;
+}
+
+.navItem{
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    height: fit-content;
+}
