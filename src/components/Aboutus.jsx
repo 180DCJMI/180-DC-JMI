@@ -1,5 +1,5 @@
 import React from 'react';
-import  Logo from './Logo.png';
+import Logo from "./logo2.png";
 
 const Aboutus = () => {
   return (
@@ -8,10 +8,10 @@ const Aboutus = () => {
       <h1 className='text-6xl font-weight: 800 font-family: avenir'> About us</h1>
     </div>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-5'>
-        <img className='w-[622px] h-[620px] mx-auto my-4 md:border-r-4 md:border-black col-span-2' src={Logo} alt='/' />
-        <div className='flex flex-col justify-center col-span-3'>
+        <img className='md:w-[30vw]   md:h-[40vh]  mx-auto my-4  col-span-2' src={Logo} alt='/' />
+        <div className='flex flex-col justify-center col-span-3 p-[2%]'>
           
-          <p className='text-left pl-[50px]'>
+          <p className='text-left text-[2vh] md:border-l-4 md:border-black  font-normal font-family: avenir p-[2vw]'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             molestiae delectus culpa hic assumenda, voluptate reprehenderit
             dolore autem cum ullam sed odit perspiciatis. Doloribus quos velit,
@@ -20,7 +20,7 @@ const Aboutus = () => {
           </p>
           <div className='pl-[20px]'>
 
-          <button className='bg-[#00A25A] text-white w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3 ml-'>About us</button>
+          <button className='bg-[#00A25A] text-white w-[10vw] rounded-md font-medium my-6 mx-auto md:mx-0 py-3 ml-'>About us</button>
         </div>
           </div>
       </div>
